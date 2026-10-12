@@ -1,0 +1,293 @@
+.meal-subscriptions-page {
+    padding: 30px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.meal-subscriptions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.meal-subscriptions-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 28px;
+}
+
+.meal-subscriptions-header p {
+    margin-top: 6px;
+    color: #6b7280;
+}
+
+
+/* ==========================
+   Back Button
+========================== */
+
+.back-dashboard-button {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-dashboard-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* ==========================
+   Form Card
+========================== */
+
+.subscription-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+}
+
+.subscription-form-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+
+/* ==========================
+   Form
+========================== */
+
+.subscription-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.subscription-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-form-group label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.subscription-form-group input,
+.subscription-form-group select {
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.subscription-form-group input:focus,
+.subscription-form-group select:focus {
+    border-color: #2563eb;
+}
+
+
+/* ==========================
+   Assign Button
+========================== */
+
+.assign-meal-button {
+    margin-top: 20px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.assign-meal-button:hover {
+    background: #1d4ed8;
+}
+
+.assign-meal-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+
+/* ==========================
+   Subscription List
+========================== */
+
+.subscription-list-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.subscription-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.subscription-list-header h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.subscription-list-header span {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==========================
+   Table
+========================== */
+
+.subscription-table-wrapper {
+    overflow-x: auto;
+}
+
+.subscription-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subscription-table th {
+    text-align: left;
+    padding: 13px;
+    background: #f9fafb;
+    color: #374151;
+    font-size: 13px;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.subscription-table td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #4b5563;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.subscription-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.subscription-table td strong {
+    display: block;
+    color: #111827;
+}
+
+.subscription-table td small {
+    display: block;
+    margin-top: 3px;
+    color: #6b7280;
+}
+
+
+/* ==========================
+   Status
+========================== */
+
+.subscription-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.subscription-status.active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.subscription-status.cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.subscription-status.expired {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+
+/* ==========================
+   Cancel Button
+========================== */
+
+.cancel-subscription-button {
+    border: none;
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-subscription-button:hover {
+    background: #fecaca;
+}
+
+
+/* ==========================
+   Empty
+========================== */
+
+.no-subscriptions {
+    text-align: center;
+    color: #6b7280;
+    padding: 30px;
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .meal-subscriptions-page {
+        padding: 20px;
+    }
+
+    .meal-subscriptions-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .subscription-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription-table {
+        min-width: 950px;
+    }
+}

@@ -1,0 +1,325 @@
+/* =========================
+   Rooms Page
+========================= */
+
+.rooms-page {
+    padding: 30px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.rooms-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.rooms-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+.rooms-header p {
+    margin-top: 7px;
+    margin-bottom: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Back Dashboard Button
+========================= */
+
+.back-dashboard-button {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.back-dashboard-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================
+   Add Room Card
+========================= */
+
+.room-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+}
+
+.room-form-card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.room-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.room-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-form-group label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.room-form-group input {
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.room-form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   Add Room Button
+========================= */
+
+.add-room-button {
+    margin-top: 22px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-room-button:hover {
+    background: #1d4ed8;
+}
+
+.add-room-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   Room List Card
+========================= */
+
+.room-list-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+/* =========================
+   Room List Header
+========================= */
+
+.room-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.room-list-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+.room-list-header span {
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.room-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.room-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.room-table th {
+    text-align: left;
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13px 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.room-table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #374151;
+    font-size: 14px;
+}
+
+.room-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* =========================
+   Available Beds
+========================= */
+
+.available-beds {
+    display: inline-block;
+    min-width: 25px;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 600;
+}
+
+.full-beds {
+    display: inline-block;
+    min-width: 25px;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #fee2e2;
+    color: #991b1b;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Status
+========================= */
+
+.status-active {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #dcfce7;
+    color: #166534;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-inactive {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #fee2e2;
+    color: #991b1b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   No Rooms
+========================= */
+
+.no-rooms {
+    text-align: center;
+    padding: 35px 10px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 800px) {
+
+    .rooms-page {
+        padding: 20px;
+    }
+
+    .room-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rooms-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .rooms-header h1 {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .rooms-page {
+        padding: 15px;
+    }
+
+    .rooms-header {
+        flex-direction: column;
+    }
+
+    .back-dashboard-button {
+        width: 100%;
+    }
+
+    .room-form-card,
+    .room-list-card {
+        padding: 18px;
+    }
+
+}

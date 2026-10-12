@@ -1,0 +1,274 @@
+.meal-plans-page {
+    padding: 30px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.meal-plans-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.meal-plans-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 28px;
+}
+
+.meal-plans-header p {
+    margin-top: 6px;
+    color: #6b7280;
+}
+
+
+/* ==========================
+   Back Button
+========================== */
+
+.back-dashboard-button {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-dashboard-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* ==========================
+   Form Card
+========================== */
+
+.meal-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+}
+
+.meal-form-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+
+/* ==========================
+   Form
+========================== */
+
+.meal-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.meal-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.meal-form-group label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.meal-form-group input,
+.meal-form-group select,
+.meal-form-group textarea {
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.meal-form-group input:focus,
+.meal-form-group select:focus,
+.meal-form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.meal-form-group textarea {
+    resize: vertical;
+}
+
+
+/* ==========================
+   Add Button
+========================== */
+
+.add-meal-button {
+    margin-top: 20px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-meal-button:hover {
+    background: #1d4ed8;
+}
+
+.add-meal-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+
+/* ==========================
+   List Card
+========================== */
+
+.meal-list-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.meal-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.meal-list-header h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.meal-list-header span {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==========================
+   Table
+========================== */
+
+.meal-table-wrapper {
+    overflow-x: auto;
+}
+
+.meal-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.meal-table th {
+    text-align: left;
+    padding: 13px;
+    background: #f9fafb;
+    color: #374151;
+    font-size: 13px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.meal-table td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.meal-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.meal-table td strong {
+    color: #111827;
+}
+
+
+/* ==========================
+   Status
+========================== */
+
+.status-active,
+.status-inactive {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-inactive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* ==========================
+   Empty
+========================== */
+
+.no-meal-plans {
+    text-align: center;
+    color: #6b7280;
+    padding: 30px;
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .meal-plans-page {
+        padding: 20px;
+    }
+
+    .meal-plans-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .meal-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .meal-form-group.full-width {
+        grid-column: auto;
+    }
+
+    .meal-table {
+        min-width: 800px;
+    }
+}

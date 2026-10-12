@@ -1,0 +1,332 @@
+/* =========================
+   Bookings Page
+========================= */
+
+.bookings-page {
+    padding: 30px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.bookings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.bookings-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+.bookings-header p {
+    margin-top: 7px;
+    margin-bottom: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Back Dashboard
+========================= */
+
+.back-dashboard-button {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.back-dashboard-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================
+   Booking Form Card
+========================= */
+
+.booking-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+}
+
+.booking-form-card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+
+/* =========================
+   Form Grid
+========================= */
+
+.booking-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.booking-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form-group label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.booking-form-group input,
+.booking-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: white;
+    color: #374151;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.booking-form-group input:focus,
+.booking-form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   Create Booking Button
+========================= */
+
+.create-booking-button {
+    margin-top: 22px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.create-booking-button:hover {
+    background: #1d4ed8;
+}
+
+.create-booking-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   Booking List Card
+========================= */
+
+.booking-list-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+/* =========================
+   Booking List Header
+========================= */
+
+.booking-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.booking-list-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+.booking-list-header span {
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.booking-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking-table th {
+    text-align: left;
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13px 15px;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.booking-table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #374151;
+    font-size: 14px;
+}
+
+.booking-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* =========================
+   Student Name
+========================= */
+
+.booking-table td strong {
+    display: block;
+    color: #1f2937;
+}
+
+.booking-table td small {
+    display: block;
+    margin-top: 3px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+
+/* =========================
+   Booking Status
+========================= */
+
+.booking-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Pending */
+
+.booking-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* Confirmed */
+
+.booking-status.confirmed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+
+/* Cancelled */
+
+.booking-status.cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================
+   No Bookings
+========================= */
+
+.no-bookings {
+    text-align: center;
+    padding: 35px 10px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 800px) {
+
+    .bookings-page {
+        padding: 20px;
+    }
+
+    .booking-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bookings-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .bookings-header h1 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .bookings-page {
+        padding: 15px;
+    }
+
+    .bookings-header {
+        flex-direction: column;
+    }
+
+    .back-dashboard-button {
+        width: 100%;
+    }
+
+    .booking-form-card,
+    .booking-list-card {
+        padding: 18px;
+    }
+}
